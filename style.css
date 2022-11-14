@@ -1,0 +1,62 @@
+body {
+  background-color: black;
+}
+.feed{
+  background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.post {
+  width: 300px;
+  height: 150px;
+  margin-top: 10px;
+   margin-left: 30px;
+   padding: 10px;
+   display: flex;
+   border-radius: 10px;
+   background-position: center;
+   background-color: darkred;
+   position: relative;
+}
+
+.workout {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+  background-position: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+
+.userInfo {
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+  background-position: center;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+img {
+  height: 70%;
+  width: 40%;
+  background-color: bisque;
+  position: absolute;
+  top: 5%;
+  right: 10%;
+}
+
+button
