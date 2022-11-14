@@ -1,0 +1,22 @@
+###
+GET http://localhost:8000/users
+###
+DELETE http://localhost:8000/users/4
+
+###
+POST http://localhost:8000/users
+Content-Type: application/json
+
+{"user_name" : "James", "weight" : "150", "goal_Weight" : "175", "fitness_Level": "2"}
+
+###
+POST http://localhost:8000/exercises
+Content-Type:  application/json
+
+{"name" : "flying", "lvl" :"3", "muscle_Group" : "all"}
+
+### 
+PATCH http://localhost:8000/users/5
+Content-Type: application/json
+
+{"weight": 200}
