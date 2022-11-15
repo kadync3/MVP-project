@@ -1,9 +1,9 @@
-const e = require("express");
+
 const express = require("express");
 const app = express();
 const { Pool } = require("pg");
-const config = require("./config"); //[process.env.NODE_ENV||"dev"];
-const pool = new Pool({ connectionString: config.dev.connectionString });
+const config = require("./config")[process.env.NODE_ENV||"dev"];
+const pool = new Pool({ connectionString: config.connectionString });
 const cors = require('cors')
 app.use(cors())
 pool.connect();
@@ -24,7 +24,7 @@ app.get("/exercises", (req, res) => {
 
 //[] build individual users functionality
 app.get("/users", (req, res) => {
-  var id = req.params.id;
+  // var id = req.params.id;
   pool
     .query(`SELECT * FROM users`)
     .then((result) => res.send(result.rows))
